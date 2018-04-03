@@ -52,7 +52,7 @@ func main() {
     // [1]foo{
     //   foo{
     //     Foo: []*foo{
-    //       *foo{
+    //       &foo{
     //         Foo: map[string]interface{}{
     //           "foo": foo{
     //             Foo: (string)"123",

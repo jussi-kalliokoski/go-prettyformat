@@ -111,7 +111,7 @@ func TestArrays(t *testing.T) {
 
 func TestPointers(t *testing.T) {
 	v := 1
-	expectResultToMatch(t, &v, "*1")
+	expectResultToMatch(t, &v, "&1")
 }
 
 func TestStructs(t *testing.T) {
@@ -176,7 +176,7 @@ func TestNested(t *testing.T) {
 		`[1]foo1{
   foo1{
     Foo: []*foo1{
-      *foo1{
+      &foo1{
         Foo: map[string]interface{}{
           "foo": foo1{
             Foo: (string)"123",

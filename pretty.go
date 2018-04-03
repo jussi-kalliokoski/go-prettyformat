@@ -294,7 +294,7 @@ func formatPtr(value interface{}, padding int) (string, error) {
 	if err != nil {
 		return "", nil
 	}
-	return fmt.Sprintf("*%s", formattedElem), nil
+	return fmt.Sprintf("&%s", formattedElem), nil
 }
 
 func formatSlice(value interface{}, padding int) (string, error) {
